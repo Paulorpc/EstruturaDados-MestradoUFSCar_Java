@@ -13,7 +13,7 @@ Exercícios do livro 'Estrutura de Dados e Algoritmos em Java' de Goodrich e Tam
 
 ---
 
-#### Capítulo 2
+#### :bulb: Capítulo 2
 
 ##### Reforço
 
@@ -30,14 +30,14 @@ Exercícios do livro 'Estrutura de Dados e Algoritmos em Java' de Goodrich e Tam
 > **R:** Read it, Ship it, Buy it, Read it, Box it, Read it.
  
 
- ##### Criatividade
+ ##### :bulb: Criatividade
 **2.1.** 
 > **R:** Por que o algoritmo de ativação dinâmica irá percorrer todas as classes procurando o método chamado na excução do objeto. Se o método for encontrado na classe de nível mais baixo, é executado, senão vai subindo para as superclasses a procura do método até, chegar na classe de nível mais alto. Se ainda assim o método não for encontrado então o ambiente de execução encerra o programa informando o erro relacionado.
 
 
 --- 
 
-#### Capítulo 3
+#### :bulb: Capítulo 3
 
 #### Reforço
 
@@ -49,7 +49,7 @@ Exercícios do livro 'Estrutura de Dados e Algoritmos em Java' de Goodrich e Tam
 
 --- 
 
-#### Capítulo 4 	 	 
+#### :bulb: Capítulo 4 	 	 
 
 ##### Reforço
 
@@ -118,7 +118,7 @@ Exercícios do livro 'Estrutura de Dados e Algoritmos em Java' de Goodrich e Tam
 > ==> Q={}	 
 
 
-##### Criatividade
+##### :bulb: Criatividade
 
 **4.2.** Describe how to implement the stack ADT using a single queue as an instance variable, and only constant additional local memory within the method bodies. What is the running time of the push(), pop(), and top() methods for your design?
 
@@ -281,7 +281,7 @@ maio(S) {
 
 --- 
 
-#### Capítulo 5
+#### :bulb: Capítulo 5
 
 ##### Reforço
 
@@ -348,7 +348,7 @@ maio(S) {
 > **R:** [5,3]; [3]; [3,2,8]; [8]; [8,9,1]; [9,1]; [9,1,7,6]; [7,6, 4]; [4]
 
 
-##### Criatividade 
+##### :bulb: Criatividade 
 
 **5.2.** Describe how to implement the stack ADT using a single queue as an instance variable, and only constant additional local memory within the method bodies. What is the running time of the push(), pop(), and top() methods for your design?
 
@@ -537,7 +537,7 @@ maio(S) {
 
 --- 
 
-#### Capítulo 6
+#### :bulb: Capítulo 6
 
 ##### Reforço
 **6.1.** Draw a representation, akin to Example 7.1, of an initially empty list L after performing 
@@ -566,7 +566,7 @@ Logo, nomínimo n e no máximo k.n;
 
 --- 
 
-#### Captítulo 8 
+#### :bulb: Captítulo 8 
 
 ##### Reforço
 **8.1.** 
@@ -618,7 +618,7 @@ poderá ter no máximo dois filhos.
 > **R:** No topo ou no maior nível da árvore.  
 
 
-##### Criatividade
+##### :bulb: Criatividade
 
 **8.4.**
 > R: Crio uma fila (ordenada ou não ordenada) e uma variável incremental que será a chave do elemento. O método remove, será o remove retorna o maior elemento, assim para cada inserção faz-se um > incremento na variavel chave
@@ -629,7 +629,7 @@ poderá ter no máximo dois filhos.
 
 ---
 
-#### Capítulo 9
+#### :bulb: Capítulo 9
 
 ##### Reforço
 
@@ -667,7 +667,7 @@ poderá ter no máximo dois filhos.
 
 ---
 
-#### Capítulo 10
+#### :bulb: Capítulo 10
 
 ##### Reforço
 
@@ -697,7 +697,7 @@ poderá ter no máximo dois filhos.
 
 ---
 
-#### Capítulo 11
+#### :bulb: Capítulo 11
 
 ##### Reforço
 
@@ -857,7 +857,7 @@ lista radixsort(lista S) {
 
 ---
 
-#### Capítulo 12
+#### :bulb: Capítulo 12
 
 ##### Reforço
 
