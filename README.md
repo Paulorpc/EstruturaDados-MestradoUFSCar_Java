@@ -2,9 +2,9 @@
 Aulas de Estrutura de Dados UFSCar - DC - Mestrado em Eng. Software.
 Exercícios do livro 'Estrutura de Dados e Algoritmos em Java' de Goodrich e Tamassia.
 
-Obs: Os exercícios da 4a edição (impressa) e da 6a. edição (pdf) são basicamente os mesmo, me lembro que alguns mudam a numeração apenas. Comprei a versão 4 para acompanhamento, mas os exercícios, salvo engano, fiz a partir do pdf da 6a. edição.
+**Obs:** Os exercícios da 4a edição (impressa) e da 6a. edição (pdf) são basicamente os mesmo, me lembro que alguns mudam a numeração apenas. Comprei a versão 4 para acompanhamento, mas os exercícios, salvo engano, fiz a partir do pdf da 6a. edição.
 
-Link bibliotecas: http://cs.brown.edu/cgc/net.datastructures.net/download.html
+**Link bibliotecas:** http://cs.brown.edu/cgc/net.datastructures.net/download.html
 
 ### Exercícios que não exigem implementação
 
