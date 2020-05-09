@@ -38,28 +38,28 @@ Link bibliotecas: http://cs.brown.edu/cgc/net.datastructures.net/download.html
 2. Describe how to implement the stack ADT using a single queue as an instance variable, and only constant additional local memory within the method bodies. What is the running time of the push(), pop(), and top() methods for your design?
 
 ```java
-	metodo push(E el) {
-	
-		No n = novo No(el, Top)
-		top = n;
-		size++;
-	
-	} => O(1)
-	
-	metodo E pop() {
-	
-		E tmp = top.getElement();
-		top = top.getNext();
-		size--;
-		retorno tmp;
-	
-	} => O(1)
-	
-	metodo top() {
-	
-		return top.getElement();
-	
-    } => O(1)
+metodo push(E el) {
+
+	No n = novo No(el, Top)
+	top = n;
+	size++;
+
+} => O(1)
+
+metodo E pop() {
+
+	E tmp = top.getElement();
+	top = top.getNext();
+	size--;
+	retorno tmp;
+
+} => O(1)
+
+metodo top() {
+
+	return top.getElement();
+
+} => O(1)
 ```
 
 3. Suppose Alice has picked three distinct integers and placed them into a stack S in random order. Write a short, straightline piece of pseudocode (with no loops or recursion) that uses only one comparison and only one variable x, yet that results in variable x storing the largest of Alice’s three integers with probability 2/3. Argue why your method is correct.
@@ -69,14 +69,14 @@ Link bibliotecas: http://cs.brown.edu/cgc/net.datastructures.net/download.html
 > **R:** Retiro o elemento do topo da pilha e comparo com o elemento que ficou no topo, se o elemento X for maior que o	elemento do topo, não faço nada, senão x recebe este elemento. Desta forma, entre 3 elementos, x sempre receberá o maior entre os dois do topos, logo tenho uma chance de 2/3 de ter o maior elemento em x.
 
 ```java	
-	maio(S) {
+maio(S) {
+
+	x = S.pop();
 	
+	if ( x < S.top )
 		x = S.pop();
-		
-		if ( x < S.top )
-			x = S.pop();
-	
-    }
+
+}
 ```   
 
 4. Descreva como implementar um TAD pilha usndo duas filas. Qual o tempo de execução dos métodos push e pop.	 
@@ -119,77 +119,77 @@ Link bibliotecas: http://cs.brown.edu/cgc/net.datastructures.net/download.html
 > OBS: Adicionei o flag top depois da metade do desenvolvimento do pseudocodigo, teria como > melhorar o resultado.
 	 
 ```java
-	 metodo void push (E el) {
-	 
-	 	No n = novo No(el, null);
-	 
-	 	se ( sizeA == 0 E sizeB == 0) {
-	 		A.enqueu(no);
-	 	}
-	 	ouse ( sizeA > 0 E sizeB == 1) {
-	 		A.enqueu( B.dequeu() );
-	 		B.enqueu(no);
-	 	}
-	 	ouse ( sizeB > 0 E sizeA == 1) {
-	 		B.enqueu( A.dequeu() );
-	 		A.enqueu(no);
-	 	}
-	 
-	 }
-	 
-	 metodo E pop () {
-	 
-	 	E tmp;
-	 
-	 	se ( sizeA == 0 E sizeB == 0) {
-	 		lança exception;
-	 	}
-	 	ouse ( sizeA > 0 E sizeB == 1) {
-	 		tmp = B.getElement();
-	 		B.dequeu();
-	 		transferencia("AB");
-	 	}
-	 	ouse ( sizeB > 0 E sizeA == 1) {
-	 		tmp = A.getElement();
-	 		A.dequeu();
-	 		transferencia("BA");	 		
-	 	}
-	 	senao {
-	 		 
-	 		 if (top == A) {
-	 		 	tmp = A.getElement();
-	 		 	A.dequeu();
-	 		 }
-	 		 else {
-	 		 	tmp = B.getElement();
-	 		 	B.dequeu();
-	 		 }
-	 	}	 	
-	 	retorno tmp;
-	 }
-	 
-	 metodo static void transferencia(DePara) {
-	 
-	 Global top;
-	 
-	 	se (DePara == "AB") {
-	 		
-	 		for (int i=0; i<sizeA-1; i++)
-	 			B.Enqueu( A.dequeue );
-	 		
-	 		top = "A"
-	 	
-	 	}
-	 	ouse (DePara == "BA") {
-	 	
-	 		for (int i=0; i<sizeB-1; i++)
-	 			A.Enqueu( B.dequeue );
-	 		
-	 		top = "B"
-	 	
-	 	}
-	 	
-	 }
+ metodo void push (E el) {
+ 
+ 	No n = novo No(el, null);
+ 
+ 	se ( sizeA == 0 E sizeB == 0) {
+ 		A.enqueu(no);
+ 	}
+ 	ouse ( sizeA > 0 E sizeB == 1) {
+ 		A.enqueu( B.dequeu() );
+ 		B.enqueu(no);
+ 	}
+ 	ouse ( sizeB > 0 E sizeA == 1) {
+ 		B.enqueu( A.dequeu() );
+ 		A.enqueu(no);
+ 	}
+ 
+ }
+ 
+ metodo E pop () {
+ 
+ 	E tmp;
+ 
+ 	se ( sizeA == 0 E sizeB == 0) {
+ 		lança exception;
+ 	}
+ 	ouse ( sizeA > 0 E sizeB == 1) {
+ 		tmp = B.getElement();
+ 		B.dequeu();
+ 		transferencia("AB");
+ 	}
+ 	ouse ( sizeB > 0 E sizeA == 1) {
+ 		tmp = A.getElement();
+ 		A.dequeu();
+ 		transferencia("BA");	 		
+ 	}
+ 	senao {
+ 		 
+ 		 if (top == A) {
+ 		 	tmp = A.getElement();
+ 		 	A.dequeu();
+ 		 }
+ 		 else {
+ 		 	tmp = B.getElement();
+ 		 	B.dequeu();
+ 		 }
+ 	}	 	
+ 	retorno tmp;
+ }
+ 
+ metodo static void transferencia(DePara) {
+ 
+ Global top;
+ 
+ 	se (DePara == "AB") {
+ 		
+ 		for (int i=0; i<sizeA-1; i++)
+ 			B.Enqueu( A.dequeue );
+ 		
+ 		top = "A"
+ 	
+ 	}
+ 	ouse (DePara == "BA") {
+ 	
+ 		for (int i=0; i<sizeB-1; i++)
+ 			A.Enqueu( B.dequeue );
+ 		
+ 		top = "B"
+ 	
+ 	}
+ 	
+ }
 ```     	 	 
 
 ##### Reforço
@@ -213,17 +213,17 @@ Link bibliotecas: http://cs.brown.edu/cgc/net.datastructures.net/download.html
 > **R:** O conceito de grupos de simbolos aplicados a expressões aritiméticas, significa que para pada simbolo adicionado, deve ter o simbolo de fechamento respectivo na expressão obdecendo a ordem de inserção. Pode-se aplicar este conceito	através de pilhas, onde os simbolos necessários são adicionados em uma pilha e eles precisarão obedecer a saída da pilha para realizar os fechamentos corretos. Por exemplo: {[(5+3)*2] + (2-3)}
 
 ```java	
-	   [ '{', '[', '(' ]; 
-	   
-	   [ '{', '[' ]; 
-	   
-	   [ '{' ]; 
-	   
-	   [ '{', '(' ]; 
-	   
-	   [ '{' ]; 
-	   
-	   []; 
+   [ '{', '[', '(' ]; 
+   
+   [ '{', '[' ]; 
+   
+   [ '{' ]; 
+   
+   [ '{', '(' ]; 
+   
+   [ '{' ]; 
+   
+   []; 
 ```	
 
 
@@ -265,28 +265,28 @@ Link bibliotecas: http://cs.brown.edu/cgc/net.datastructures.net/download.html
 2. Describe how to implement the stack ADT using a single queue as an instance variable, and only constant additional local memory within the method bodies. What is the running time of the push(), pop(), and top() methods for your design?
 
 ```java	
-	metodo push(E el) {
-	
-		No n = novo No(el, Top)
-		top = n;
-		size++;
-	
-	} => O(1)
-	
-	metodo E pop() {
-	
-		E tmp = top.getElement();
-		top = top.getNext();
-		size--;
-		retorno tmp;
-	
-	} => O(1)
-	
-	metodo top() {
-	
-		return top.getElement();
-	
-	} => O(1)
+metodo push(E el) {
+
+	No n = novo No(el, Top)
+	top = n;
+	size++;
+
+} => O(1)
+
+metodo E pop() {
+
+	E tmp = top.getElement();
+	top = top.getNext();
+	size--;
+	retorno tmp;
+
+} => O(1)
+
+metodo top() {
+
+	return top.getElement();
+
+} => O(1)
 ```
 
 
@@ -297,14 +297,14 @@ Link bibliotecas: http://cs.brown.edu/cgc/net.datastructures.net/download.html
 > **R:** Retiro o elemento do topo da pilha e comparo com o elemento que ficou no topo, se o elemento X for maior que o	elemento do topo, não faço nada, senão x recebe este elemento. Desta forma, entre 3 elementos, x sempre receberá o maior entre os dois do topos, logo tenho uma chance de 2/3 de ter o maior elemento em x.
 
 ```java	
-	maio(S) {
+maio(S) {
+
+	x = S.pop();
 	
+	if ( x < S.top )
 		x = S.pop();
-		
-		if ( x < S.top )
-			x = S.pop();
-	
-    }
+
+}
 ```
 	 
 
@@ -348,77 +348,77 @@ Link bibliotecas: http://cs.brown.edu/cgc/net.datastructures.net/download.html
 > OBS: Adicionei o flag top depois da metade do desenvolvimento do pseudocodigo, teria com> melhorar o resultado.
 
 ```java
-	 metodo void push (E el) {
-	 
-	 	No n = novo No(el, null);
-	 
-	 	se ( sizeA == 0 E sizeB == 0) {
-	 		A.enqueu(no);
-	 	}
-	 	ouse ( sizeA > 0 E sizeB == 1) {
-	 		A.enqueu( B.dequeu() );
-	 		B.enqueu(no);
-	 	}
-	 	ouse ( sizeB > 0 E sizeA == 1) {
-	 		B.enqueu( A.dequeu() );
-	 		A.enqueu(no);
-	 	}
-	 
-	 }
-	 
-	 metodo E pop () {
-	 
-	 	E tmp;
-	 
-	 	se ( sizeA == 0 E sizeB == 0) {
-	 		lança exception;
-	 	}
-	 	ouse ( sizeA > 0 E sizeB == 1) {
-	 		tmp = B.getElement();
-	 		B.dequeu();
-	 		transferencia("AB");
-	 	}
-	 	ouse ( sizeB > 0 E sizeA == 1) {
-	 		tmp = A.getElement();
-	 		A.dequeu();
-	 		transferencia("BA");	 		
-	 	}
-	 	senao {
-	 		 
-	 		 if (top == A) {
-	 		 	tmp = A.getElement();
-	 		 	A.dequeu();
-	 		 }
-	 		 else {
-	 		 	tmp = B.getElement();
-	 		 	B.dequeu();
-	 		 }
-	 	}	 	
-	 	retorno tmp;
-	 }
-	 
-	 metodo static void transferencia(DePara) {
-	 
-	 Global top;
-	 
-	 	se (DePara == "AB") {
-	 		
-	 		for (int i=0; i<sizeA-1; i++)
-	 			B.Enqueu( A.dequeue );
-	 		
-	 		top = "A"
-	 	
-	 	}
-	 	ouse (DePara == "BA") {
-	 	
-	 		for (int i=0; i<sizeB-1; i++)
-	 			A.Enqueu( B.dequeue );
-	 		
-	 		top = "B"
-	 	
-	 	}
-	 	
-	 }
+ metodo void push (E el) {
+ 
+ 	No n = novo No(el, null);
+ 
+ 	se ( sizeA == 0 E sizeB == 0) {
+ 		A.enqueu(no);
+ 	}
+ 	ouse ( sizeA > 0 E sizeB == 1) {
+ 		A.enqueu( B.dequeu() );
+ 		B.enqueu(no);
+ 	}
+ 	ouse ( sizeB > 0 E sizeA == 1) {
+ 		B.enqueu( A.dequeu() );
+ 		A.enqueu(no);
+ 	}
+ 
+ }
+ 
+ metodo E pop () {
+ 
+ 	E tmp;
+ 
+ 	se ( sizeA == 0 E sizeB == 0) {
+ 		lança exception;
+ 	}
+ 	ouse ( sizeA > 0 E sizeB == 1) {
+ 		tmp = B.getElement();
+ 		B.dequeu();
+ 		transferencia("AB");
+ 	}
+ 	ouse ( sizeB > 0 E sizeA == 1) {
+ 		tmp = A.getElement();
+ 		A.dequeu();
+ 		transferencia("BA");	 		
+ 	}
+ 	senao {
+ 		 
+ 		 if (top == A) {
+ 		 	tmp = A.getElement();
+ 		 	A.dequeu();
+ 		 }
+ 		 else {
+ 		 	tmp = B.getElement();
+ 		 	B.dequeu();
+ 		 }
+ 	}	 	
+ 	retorno tmp;
+ }
+ 
+ metodo static void transferencia(DePara) {
+ 
+ Global top;
+ 
+ 	se (DePara == "AB") {
+ 		
+ 		for (int i=0; i<sizeA-1; i++)
+ 			B.Enqueu( A.dequeue );
+ 		
+ 		top = "A"
+ 	
+ 	}
+ 	ouse (DePara == "BA") {
+ 	
+ 		for (int i=0; i<sizeB-1; i++)
+ 			A.Enqueu( B.dequeue );
+ 		
+ 		top = "B"
+ 	
+ 	}
+ 	
+ }
 ```	 
 
 
@@ -494,17 +494,17 @@ Link bibliotecas: http://cs.brown.edu/cgc/net.datastructures.net/download.html
 > **R:** O conceito de grupos de simbolos aplicados a expressões aritiméticas, significa que para pada simbolo adicionado, deve ter o simbolo de fechamento respectivo na expressão obdecendo a ordem de inserção. Pode-se aplicar este conceito através de pilhas, onde os simbolos necessários são adicionados em uma pilha e eles precisarão obedecer a saída da pilha para realizar os fechamentos corretos. Por exemplo: {[(5+3)*2] + (2-3)}
 
 ```java	
-	   [ '{', '[', '(' ]; 
-	   
-	   [ '{', '[' ]; 
-	   
-	   [ '{' ]; 
-	   
-	   [ '{', '(' ]; 
-	   
-	   [ '{' ]; 
-	   
-	   []; 
+   [ '{', '[', '(' ]; 
+   
+   [ '{', '[' ]; 
+   
+   [ '{' ]; 
+   
+   [ '{', '(' ]; 
+   
+   [ '{' ]; 
+   
+   []; 
 ```
 
 
