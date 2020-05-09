@@ -15,7 +15,7 @@ Exercícios do livro 'Estrutura de Dados e Algoritmos em Java' de Goodrich e Tam
 
 ### :bulb: Capítulo 2
 
-#### Reforço
+#### REFORÇO
 
 **2.1.** 
 > **R:** É possível uma interface extender outras, porém se uma interface A extender uma interface B, então B não poderá extender A devido a hieranquia de classes.  
@@ -30,7 +30,7 @@ Exercícios do livro 'Estrutura de Dados e Algoritmos em Java' de Goodrich e Tam
 > **R:** Read it, Ship it, Buy it, Read it, Box it, Read it.
  
 
-#### Criatividade
+#### CRIATIVIDADE
 
 **2.1.** 
 > **R:** Por que o algoritmo de ativação dinâmica irá percorrer todas as classes procurando o método chamado na excução do objeto. Se o método for encontrado na classe de nível mais baixo, é executado, senão vai subindo para as superclasses a procura do método até, chegar na classe de nível mais alto. Se ainda assim o método não for encontrado então o ambiente de execução encerra o programa informando o erro relacionado.
@@ -40,7 +40,7 @@ Exercícios do livro 'Estrutura de Dados e Algoritmos em Java' de Goodrich e Tam
 
 ### :bulb: Capítulo 3
 
-#### Reforço
+#### REFORÇO
 
 **3.4.** 
 > **R:** Na classe Caesar, alteraria o valor de ALPHASIZE para a quantidade de caracteres que possua o alfabeto da linguagem, alteraria o vetor alpha para as letras do alfabeto desejado, e na onde faz a operação " - 'A'", alteraria o unicode de 'A' pelo unicode da primeira letra do alfabeto desejado (letra com menor unicode).
@@ -52,7 +52,7 @@ Exercícios do livro 'Estrutura de Dados e Algoritmos em Java' de Goodrich e Tam
 
 ### :bulb: Capítulo 4 	 	 
 
-#### Reforço
+#### REFORÇO
 
 **4.1.** Suppose an initially empty stack S has performed a total of 25 push operations, 12 top operations and 10 pop operations, 3 of which returned null to indicate an empty stack. What is the current size of S?
 		
@@ -119,7 +119,7 @@ Exercícios do livro 'Estrutura de Dados e Algoritmos em Java' de Goodrich e Tam
 > ==> Q={}	 
 
 
-#### Criatividade
+#### CRIATIVIDADE
 
 **4.2.** Describe how to implement the stack ADT using a single queue as an instance variable, and only constant additional local memory within the method bodies. What is the running time of the push(), pop(), and top() methods for your design?
 
@@ -284,7 +284,7 @@ maio(S) {
 
 ### :bulb: Capítulo 5
 
-#### Reforço
+#### REFORÇO
 
 **5.1.** Suppose an initially empty stack S has performed a total of 25 push operations, 12 top operations, and 10 pop operations, 3 of which returned null to indicate an empty stack. What is the current size of S?
 		
@@ -349,7 +349,7 @@ maio(S) {
 > **R:** [5,3]; [3]; [3,2,8]; [8]; [8,9,1]; [9,1]; [9,1,7,6]; [7,6, 4]; [4]
 
 
-#### Criatividade 
+#### CRIATIVIDADE 
 
 **5.2.** Describe how to implement the stack ADT using a single queue as an instance variable, and only constant additional local memory within the method bodies. What is the running time of the push(), pop(), and top() methods for your design?
 
@@ -540,7 +540,7 @@ maio(S) {
 
 ### :bulb: Capítulo 6
 
-#### Reforço
+#### REFORÇO
 **6.1.** Draw a representation, akin to Example 7.1, of an initially empty list L after performing 
 the following sequence of operations: add(0, 4), add(0, 3), add(0, 2), add(2, 1), add(1, 5), 
 add(1, 6), add(3, 7), add(0, 8).
@@ -567,9 +567,9 @@ Logo, nomínimo n e no máximo k.n;
 
 --- 
 
-#### Captítulo 8 
+### :bulb: Capítulo 8 
 
-#### Reforço
+#### REFORÇO
 **8.1.** 
 > **R:** Para que a árvore seja um Heap, de acordo com a circunstancia do
 exercicio, o nodo chamado no nível anterior deve ser o nodo pai e deve
@@ -619,7 +619,7 @@ poderá ter no máximo dois filhos.
 > **R:** No topo ou no maior nível da árvore.  
 
 
-#### Criatividade
+#### CRIATIVIDADE
 
 **8.4.**
 > R: Crio uma fila (ordenada ou não ordenada) e uma variável incremental que será a chave do elemento. O método remove, será o remove retorna o maior elemento, assim para cada inserção faz-se um > incremento na variavel chave
@@ -632,7 +632,7 @@ poderá ter no máximo dois filhos.
 
 ### :bulb: Capítulo 9
 
-#### Reforço
+#### REFORÇO
 
 **9.1.**
 > **R:** Tempo constante O(1), pois para inserção em sequencia não ordenada, não é necessário percorrer os elementos.  
@@ -670,7 +670,7 @@ poderá ter no máximo dois filhos.
 
 ### :bulb: Capítulo 10
 
-#### Reforço
+#### REFORÇO
 
 **10.1.** 
 > **R:** Forma de lista a esquerda
@@ -700,7 +700,7 @@ poderá ter no máximo dois filhos.
 
 ### :bulb: Capítulo 11
 
-#### Reforço
+#### REFORÇO
 
 **11.1.**
 > **R:** O mergersort, assim como o quicksort, esperasse tempo o(n log n) para ordenação, uma vez que utilizam o método de divisão e comquista.No entanto, a díficil a implementação in-place do mergesort, o torna mais menos viável para orneção de arranjos que não cabem na memória principal. Já o quicksort tem vantagem quando utilizado com arranjos que cabem completamente na memória prinpal, e a menos que seja numa aplicação em tempo real, pois no pior caso, ele pode atingir tempo O(n²). O quicksort pode ser facilmente implementado in-place, tornando sua execução um pouco mais rápida uma vez que não é necessário a criação de novas sequencias e nem movimentar dados entre elas.
@@ -860,7 +860,7 @@ lista radixsort(lista S) {
 
 ### :bulb: Capítulo 12
 
-#### Reforço
+#### REFORÇO
 
 **12.1.** 
 > **R:** 3: a, aa, aaa
